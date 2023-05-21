@@ -5,7 +5,7 @@
 _pkgbase=xfce4-whiskermenu-plugin
 pkgname=(${_pkgbase}-gtk2)
 pkgver=1.7.5
-pkgrel=1
+pkgrel=2
 pkgdesc="Menu for Xfce4 (GTK2 version)"
 arch=('x86_64')
 url='https://gottcode.org/xfce4-whiskermenu-plugin/'
@@ -13,7 +13,7 @@ groups=('xfce4-goodies')
 conflicts=("${_pkgbase}")
 provides=("${_pkgbase}")
 license=('GPL2')
-depends=('garcon' 'xfce4-panel')
+depends=('garcon-gtk2' 'xfce4-panel-gtk2')
 makedepends=('cmake' 'ninja')
 source=("http://archive.be.xfce.org/src/panel-plugins/xfce4-whiskermenu-plugin/${pkgver%.*}/xfce4-whiskermenu-plugin-$pkgver.tar.bz2") # no https available
 sha256sums=('9b60dd29be7ce315a6a8506337bbcbfe39a401ac2beddf2a611e865cc5733de6')
