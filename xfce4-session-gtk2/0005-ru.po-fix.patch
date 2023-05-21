@@ -1,0 +1,11 @@
+--- a/po/ru.po	2023-05-21 13:41:34.792085640 +0700
++++ b/po/ru.po	2023-05-21 13:40:00.544263899 +0700
+@@ -29,7 +29,7 @@
+ 
+ #: ../xfce.desktop.in.h:1
+ msgid "Xfce Session"
+-msgstr "Сеанс"
++msgstr "Сеанс Xfce"
+ 
+ #: ../xfce.desktop.in.h:2
+ msgid "Use this session to run Xfce as your desktop environment"
