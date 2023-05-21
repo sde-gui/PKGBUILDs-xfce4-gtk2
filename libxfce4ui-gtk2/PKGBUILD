@@ -14,7 +14,7 @@ groups=('xfce4-gtk2')
 conflicts=("${_pkgbase}")
 provides=("${_pkgbase}")
 depends=('libxfce4util-gtk2' 'gtk2' 'gtk3' 'xfconf-gtk2' 'libsm' 'startup-notification'
-         'hicolor-icon-theme')
+         'hicolor-icon-theme' 'glade-gtk2')
 makedepends=('intltool' 'gobject-introspection' 'vala')
 source=(https://archive.xfce.org/src/xfce/${_pkgbase}/${pkgver%.*}/${_pkgbase}-${pkgver}.tar.bz2)
 sha256sums=('c449075eaeae4d1138d22eeed3d2ad7032b87fb8878eada9b770325bed87f2da')
