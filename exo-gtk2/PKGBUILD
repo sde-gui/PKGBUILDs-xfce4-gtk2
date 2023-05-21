@@ -1,0 +1,41 @@
+# Maintainer: Evangelos Foutras <evangelos@foutrelis.com>
+# Contributor: tobias <tobias funnychar archlinux.org>
+# Contributor: Aurelien Foret <orelien@chez.com>
+
+_pkgbase=exo
+pkgname=(${_pkgbase}-gtk2)
+pkgver=0.10.7
+pkgrel=1
+pkgdesc="Extensions to Xfce by os-cillation"
+arch=('i686' 'x86_64')
+url="http://www.xfce.org/"
+license=('GPL2' 'LGPL')
+groups=('xfce4-gtk2')
+conflicts=("${_pkgbase}")
+provides=("${_pkgbase}")
+depends=('libxfce4ui-gtk2' 'gtk2' 'perl-uri' 'hicolor-icon-theme')
+makedepends=('intltool' 'gtk-doc')
+source=(http://archive.xfce.org/src/xfce/${_pkgbase}/${pkgver%.*}/${_pkgbase}-$pkgver.tar.bz2)
+sha256sums=('521581481128af93e815f9690020998181f947ac9e9c2b232b1f144d76b1b35c')
+
+prepare() {
+  cd "$srcdir/${_pkgbase}-$pkgver"
+}
+
+build() {
+  cd "$srcdir/${_pkgbase}-$pkgver"
+
+  ./configure \
+    --prefix=/usr \
+    --sysconfdir=/etc \
+    --enable-gtk-doc \
+    --disable-debug
+  make
+}
+
+package() {
+  cd "$srcdir/${_pkgbase}-$pkgver"
+  make DESTDIR="$pkgdir" install
+}
+
+# vim:set ts=2 sw=2 et:
