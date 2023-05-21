@@ -6,7 +6,7 @@
 _pkgbase=xfce4-settings
 pkgname=(${_pkgbase}-gtk2)
 pkgver=4.12.4
-pkgrel=1
+pkgrel=2
 pkgdesc="A settings manager for Xfce (GTK2 version)"
 arch=('x86_64')
 url="https://www.xfce.org/"
@@ -14,7 +14,7 @@ license=('GPL2')
 groups=('xfce4-gtk2')
 conflicts=("${_pkgbase}")
 provides=("${_pkgbase}")
-depends=('exo' 'garcon' 'libxfce4ui-gtk2' 'libnotify' 'libxklavier'
+depends=('exo-gtk2' 'garcon-gtk2' 'libxfce4ui-gtk2' 'libnotify' 'libxklavier'
          'adwaita-icon-theme' 'gnome-themes-standard')
 makedepends=('intltool' 'xf86-input-libinput')
 optdepends=('libcanberra: for sound control')
