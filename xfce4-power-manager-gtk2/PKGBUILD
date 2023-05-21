@@ -15,7 +15,7 @@ conflicts=("${_pkgbase}")
 provides=("${_pkgbase}")
 depends=('libxfce4ui-gtk2' 'upower' 'libnotify' 'hicolor-icon-theme')
 optdepends=('xfce4-panel-gtk2: for the Xfce panel plugin')
-makedepends=('intltool' 'xfce4-panel')
+makedepends=('intltool' 'xfce4-panel-gtk2')
 source=(https://archive.xfce.org/src/xfce/${_pkgbase}/${pkgver%.*}/${_pkgbase}-${pkgver}.tar.bz2)
 sha256sums=('c50ec8aa7e7848c57c0f856dceb8132eb5f37585f0ac1627459ab8c882c73b07')
 
