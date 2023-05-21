@@ -13,7 +13,7 @@ license=('GPL2')
 groups=('xfce4-gtk2')
 conflicts=("${_pkgbase}")
 provides=("${_pkgbase}")
-depends=('exo' 'garcon' 'libxfce4ui-gtk2' 'libwnck' 'hicolor-icon-theme'
+depends=('exo-gtk2' 'garcon-gtk2' 'libxfce4ui-gtk2' 'libwnck' 'hicolor-icon-theme'
          'desktop-file-utils')
 makedepends=('intltool')
 source=(https://archive.xfce.org/src/xfce/${_pkgbase}/${pkgver%.*}/${_pkgbase}-${pkgver}.tar.bz2)
